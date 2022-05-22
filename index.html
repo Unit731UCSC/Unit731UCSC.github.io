@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" >
+
+</head>
+
+<body>
+    <section class = "header">
+        <nav>
+            <a href = "index.html"> <img src = "images/logo.png"> </a>
+            <div class = "nav-links" id= "navLinks">
+                <i class="fa fa-times"  onclick = "hideMenu()"></i>
+                <ul>
+                    <li> <a href= ""> HOME </a></li>
+                    <li> <a href= "about.html"> ABOUT </a></li>
+                    <li> <a href= ""> EXPERIENCE </a></li>
+                    <li> <a href= ""> WORK </a></li>
+                    <li> <a href= ""> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick = "showMenu()"></i>
+        </nav>
+
+
+        <div class= "text-box">
+            <h1>Unit 731</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="" class="hero-btn">Contact Me To Learn More</a>
+        </div>
+
+    </section>
+
+    <!--About me---->
+    <section class="course">
+        <h1>Why does this exist?</h1>
+        <p>This first version of this webpage became a reality when I decided to have some fun and maybe showcase a few of my personal endevours. <br>
+            As I began looking for a job in my freshmen year of college, however, I became frustrated with how little a resume and a few checkboxes<br>
+            could tell my story. My fun project eventually morphed this webpage where I could show of some projects I had fun with and go into more <br>
+            detail about who I am and what people could expect from me.
+        </p>
+
+        <div class="row">
+            <a class="course-col" href= "">
+                <div>
+                    <h3>About Me</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Tristique et egestas quis ipsum suspendisse ultrices gravida. </p>
+                </div>
+            </a>
+            <a class="course-col" href= "">
+                <div>
+                    <h3>My Experience</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Tristique et egestas quis ipsum suspendisse ultrices gravida. </p>
+                </div>
+            </a>
+            <a class="course-col" href= "">
+                <div>
+                    <h3>My Projects</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Tristique et egestas quis ipsum suspendisse ultrices gravida. </p>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!--About me---->
+    <section class= "footer">
+        <h4>Other Links</h4>
+        <div class="icons">
+            <a target="_blank" href= "https://www.linkedin.com/in/mason-reali-687565224/"><i class = "fa fa-linkedin"></i></a>
+            <a target="_blank" href= "https://github.com/Manakahofski"><i class = "fa fa-github"></i></a>
+            <a target="_blank" href= "mailto:masonreali@gmail.com"><i class = "fa fa-envelope"></i></a>
+        </div>
+        <p>Made by Mason Reali</p>
+
+
+    </section>
+
+    
+
+    <!-------------------Javascript for mobile toggle menu----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+    </script>
+
+</body>
+
+
+</html>
