@@ -82,7 +82,9 @@
                 <i class="fa fa-times"  onclick = "hideMenu()"></i>
                 <ul>
                     <li> <a href= "index.html"> HOME </a></li>
-                    <li> <a href= ""> ABOUT </a></li>
+                    <li> <a href= "people.html"> THE PEOPLE </a></li>
+                    <li> <a href= "topic2.html"> TOPIC 2 </a></li>
+                    <li> <a href= "topic3.html"> TOPIC 3 </a></li>
                     <li> <a href= "sources.html"> SOURCES </a></li>
                 </ul>
             </div>
@@ -121,9 +123,36 @@
   
 </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+ <!--About me---->
+ <section class= "footer">
+    <h4>Other Links</h4>
+    <div class="icons">
+        <a target="_blank" href= "https://github.com/unit731UCSC"><i class = "fa fa-github"></i></a>
+        <a target="_blank" href= "mailto:unit731groupucsc@gmail.com"><i class = "fa fa-envelope"></i></a>
+    </div>
+    <p>Made by Adrian Garcia, Adrien Jones, Elizabeth Ortega Cardenas, Mason Reali, Matthew Minshall, Cheyenne Robinson-Greer
+    </p>
+
+
+</section>
+
+
+
+<!-------------------Javascript for mobile toggle menu----------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
 
 </body>
+
+
 </html>
