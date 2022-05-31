@@ -28,8 +28,12 @@
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
+  object-fit: fill ;
+  display: block;
+  margin: auto;
   width: 100%;
-  padding: 20px;
+  height: 100%;
+ 
 }
 
 /* Add a card effect for articles */
@@ -61,6 +65,10 @@
   margin-top: 20px;
 }
 
+.analysis{
+  line-height: 200%;
+}
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
@@ -85,11 +93,22 @@
 <div class="row">
   
     <div class="card" style='z-index: 1'>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;"><img style="padding: 20px;" src="images/isshishiro.png"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2></h2>
+      <h5>Ishii Shirō & the Founding of Unit 731</h5>
+      
+      <div class="fakeimg" style="height:400px;"><iframe class = "fakeimg"src="https://www.youtube.com/embed/xOdiQU5gNRc"></iframe></div>
+      <p>A video review of the life of Ishii Shirō</p>
+      <p class = "analysis">Ishii Shirō & the Founding of Unit 731 is a video essay on the life of Ishii Shirō, and what
+         events eventually lead to the creation of Unit 731, and his placement as the man in charge of it.
+          The video was created on December 10, 2019 by Michael, the owner of the youtube channel it was published on, The Historian’s Craft.<sup>[1] </sup>
+           Michael graduated from the State University of New York with a B.A in History and a minor in Anthropology, and has since created The
+            Historian's Craft to permit easier access to academic research for the general public.<sup>[2] </sup> He believes that “History is for everyone, not just 
+            those who can afford college”. <sup>[3] </sup>It is important to note that as the publisher and writer of this work, Michael’s work must be carefully considered
+             when using it as a source. That being said, throughout his video essay, Michael makes sure to verbally announce when a source is being referred to.
+              He also lists all of his sources, both primary and secondary, in the description of the video. In his video, Michael tends to stick straight to the
+               sources he refers to, summing them up as one cohesive story, but rarely adding his own thoughts or speculation. He is even sure to announce whenever 
+               he moves from sources to speculation to fill in the gaps, and seems intent on maintaining the integrity of the sources he uses. Overall,
+         the main goal of Ishii Shirō & the Founding of Unit 731 seems to line up with Michael’s goal of allowing for easier access to academic resources. </p>
     </div>
     <div class="card" style='z-index: 2'>
       <h2>TITLE HEADING</h2>
