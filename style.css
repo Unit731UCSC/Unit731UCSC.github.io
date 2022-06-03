@@ -34,6 +34,14 @@ nav{
     align-items: center;
 }
 
+sup {
+     color: palevioletred; 
+     vertical-align: top; 
+     position: relative;
+     top: -0.5em; 
+     text-decoration: none;
+    }
+
 nav img{
     width: 150px;
 
@@ -106,6 +114,24 @@ nav img{
 }
 
 .hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn2:hover{
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
