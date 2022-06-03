@@ -5,6 +5,7 @@
 }
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     position: relative
@@ -209,7 +210,7 @@ p{
 
 .course-col{
     flex-basis: 31% ;
-    background: #fff3f3;
+    background: #ffe5e5;
     color: black;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -228,7 +229,7 @@ h3{
 
 }
 .course-col:hover{
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0 #f44336;
 }
 @media(max-width:700px){
     .row{
