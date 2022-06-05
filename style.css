@@ -48,6 +48,17 @@ nav img{
 
 }
 
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f44336;
+}
+h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -112,6 +123,7 @@ nav img{
     background:transparent;
     position: relative;
     cursor: pointer;
+    transition: 1s;
 }
 
 .hero-btn:hover{
@@ -130,6 +142,7 @@ nav img{
     background:transparent;
     position: relative;
     cursor: pointer;
+    transition: 1s;
 }
 
 .hero-btn2:hover{
