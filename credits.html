@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+
+<meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
+<link rel = "stylesheet" href = "style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" >
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/* Header/Blog Title */
+
+
+/* Create two unequal columns that floats next to each other */
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  object-fit: fill ;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  width: 35%;
+  justify-content: center;
+  text-align: center;
+  
+  display: block;
+  margin: auto;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.creditcard {
+    flex-basis: 31% ;
+    background: #ffe5e5;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+  
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media(max-width: 700px){
+  .row {
+  width: 100%;
+}
+}
+</style>
+</head>
+<body>
+    <section class = "headersmall">
+        <nav>
+            <a href = "index.html"> <img src = "images/logo.png"> </a>
+            <div class = "nav-links" id= "navLinks">
+                <i class="fa fa-times"  onclick = "hideMenu()"></i>
+                <ul>
+                    <li> <a href= "index.html"> HOME </a></li>
+                    <li> <a href= "background.html"> BACKGROUND </a></li>
+                    <li> <a href= "actions.html"> ACTIONS </a></li>
+                  <li> <a href= "effects.html"> EFFECTS </a></li>
+                    <li> <a href= "sources.html"> SOURCES </a></li>
+                    <li> <a href= "credits.html"> CREDITS </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick = "showMenu()"></i>
+        </nav>
+    </section>
+
+<div class="row">
+    <br>
+    <h1>CREDITS</h1>
+    <br>
+
+    <div class="creditcard">
+    <h2 >Website Author/Designer</h2>
+    <h3 style ="color:gray;">Mason Reali</h3>
+    </div>
+
+    <br>
+    <div class="creditcard">
+    <h2 >Quality Control/Proof Reader</h2>
+    <h3 style ="color:gray;">Adrien Jones</h3>
+    </div>
+    <br>
+
+    <div class="creditcard">
+    <h2 >Project Outline Creator</h2>
+    <h3 style ="color:gray;">Adrian Garcia</h3>
+    </div>
+    <br>
+
+    <div class="creditcard">
+    <h2 >Additional Source Researcher</h2>
+    <h3 style ="color:gray;">Cheyenne Robinson-Greer</h3>
+    </div>
+    <br>
+
+    <div class="creditcard">
+    <h2 >Ambassador/Accountability Manager</h2>
+    <h3 style ="color:gray;">Matthew Minshall</h3>
+    </div>
+    <br>
+
+    <div class="creditcard">
+    <h2 >Timeline Manager/Secondary Ambassador</h2>
+    <h3 style ="color:gray;">Elizabeth Ortega</h3>
+</div>
+
+
+   
+
+    
+
+    
+
+    
+   
+  
+</div>
+
+ <!--About me---->
+ <section class= "footer">
+    <h4>Other Links</h4>
+    <div class="icons">
+        <a target="_blank" href= "https://github.com/unit731UCSC"><i class = "fa fa-github"></i></a>
+        <a target="_blank" href= "mailto:unit731groupucsc@gmail.com"><i class = "fa fa-envelope"></i></a>
+    </div>
+    <p>Made by Adrian Garcia, Adrien Jones, Elizabeth Ortega Cardenas, Mason Reali, Matthew Minshall, Cheyenne Robinson-Greer
+    </p>
+
+
+</section>
+
+
+
+<!-------------------Javascript for mobile toggle menu----------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+
+
+</html>
